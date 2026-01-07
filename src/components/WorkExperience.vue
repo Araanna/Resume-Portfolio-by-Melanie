@@ -72,7 +72,7 @@ const experiences = [
     },
     {
         company: "PHINMA-CDO College",
-        role: "Frontend Developer & PM",
+        role: "Lead Developer & Project Manager",
         date: "Sep 2023 – Nov 2025",
         location: "Capstone",
         points: [

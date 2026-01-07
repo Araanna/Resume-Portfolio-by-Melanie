@@ -1,9 +1,9 @@
 <template>
   <div class="w-full max-w-5xl mx-auto mt-20 px-4 pb-16">
 
-    <div ref="scrollContainer" class="flex overflow-x-auto gap-12 py-12 px-12 snap-x snap-mandatory scrollbar-hide"
+    <div ref="scrollContainer" class="flex overflow-x-auto gap-32 py-12 px-12 snap-x snap-mandatory scrollbar-hide"
       @mouseenter="isPaused = true" @mouseleave="isPaused = false">
-      <div class="flex gap-12 min-w-full">
+      <div class="flex gap-32 min-w-full">
         <div v-for="(highlight, index) in highlights" :key="index" class="snap-center shrink-0">
           <TiltedCard :isFocused="currentIndex === index" :imageSrc="highlight.image" :altText="highlight.alt"
             :captionText="highlight.caption" containerHeight="300px" containerWidth="300px" imageHeight="300px"
@@ -28,6 +28,7 @@ import imageMtKulago from '../assets/images/image 5.jpg'
 import imageBohol from '../assets/images/image.png'
 import imageGameExpo from '../assets/images/IMG_4199.JPG'
 import imageDjangoGirls from '../assets/images/django girls coach.jpg'
+import imageDataEngineering from '../assets/images/image copy.png'
 
 const scrollContainer = ref(null)
 const currentIndex = ref(0)
@@ -36,16 +37,10 @@ let intervalId = null
 
 const highlights = [
   {
-    image: imageMtKulago,
-    alt: 'Hiking in Mt. Kulago',
-    caption: 'Mt. Kulago Adventure',
-    text: 'Hiking in Mt. Kulago'
-  },
-  {
-    image: imageBohol,
-    alt: 'Travel in Bohol',
-    caption: 'Bohol Travel',
-    text: 'Travel in Bohol'
+    image: imageDataEngineering,
+    alt: 'Data Engineering Workshop',
+    caption: 'Data Engineering Workshop',
+    text: 'Attend Workshop In Data Engineering Cebu'
   },
   {
     image: imageGameExpo,
@@ -58,7 +53,21 @@ const highlights = [
     alt: 'Django Girls Coach',
     caption: 'Django Girls Achievement',
     text: 'Coaching at Django Girls'
-  }
+  },
+
+  {
+    image: imageMtKulago,
+    alt: 'Hiking in Mt. Kulago',
+    caption: 'Mt. Kulago Adventure',
+    text: 'Hiking in Mt. Kulago'
+  },
+  {
+    image: imageBohol,
+    alt: 'Travel in Bohol',
+    caption: 'Bohol Travel',
+    text: 'Travel in Bohol'
+  },
+
 ]
 
 const scrollNext = () => {

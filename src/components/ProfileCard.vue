@@ -1,3 +1,42 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const typedText1 = ref('')
+const typedText2 = ref('')
+const showCursor = ref(true)
+
+const part1 = "Hi!, "
+const part2 = "I'm Melanie Abalde"
+
+const typingSpeed = 100
+
+onMounted(() => {
+  let p1Index = 0
+  let p2Index = 0
+
+  function typePart1() {
+    if (p1Index < part1.length) {
+      typedText1.value += part1[p1Index]
+      p1Index++
+      setTimeout(typePart1, typingSpeed)
+    } else {
+      typePart2()
+    }
+  }
+
+  function typePart2() {
+    if (p2Index < part2.length) {
+      typedText2.value += part2[p2Index]
+      p2Index++
+      setTimeout(typePart2, typingSpeed)
+    }
+  }
+
+  // Start typing
+  typePart1()
+})
+</script>
+
 <template>
   <div class="w-full rounded-3xl bg-purple-50 p-8 shadow-sm relative">
     <!-- Window Controls -->
@@ -41,25 +80,54 @@
 
       <!-- Info -->
       <div class="flex-1 space-y-4">
-        <!-- Title Pill -->
-        <span class="inline-block rounded-full bg-purple-200 px-4 py-1 text-sm font-bold text-slate-800">
-          Full-Stack Developer
-        </span>
+        <!-- Greeting Headline -->
+        <h1 class="text-4xl md:text-xl font-black text-slate-800 tracking-tight mb-2">
+          <span>{{ typedText1 }}</span>
+          <span class="text-purple-600">{{ typedText2 }}</span>
+          <span class="animate-blink text-purple-600">|</span>
+        </h1>
 
         <!-- Bio -->
         <p class="text-sm leading-relaxed text-slate-600">
-          Full-Stack Developer specializing in React, Django, and RESTful APIs with a strong foundation in modern
-          frontend design (Next.js, Tailwind) and backend systems. Passionate about building scalable, user-focused web
-          applications.
+          I’m a BS IT graduate majoring in Software Development and Applied Analytics in Business for IT based in
+          Cagayan de Oro, with a strong interest in
+          building large-scale, high-impact products. I focus on developing scalable systems while bringing a
+          creative,
+          design-driven perspective to technology.
         </p>
 
-        <!-- Name -->
-        <h1 class="text-4xl font-black text-slate-800 tracking-tight">
-          Melanie Abalde
-        </h1>
+        <!-- Say Hi Button -->
+        <div class="pt-4">
+          <a href="mailto:mabalde2002@gmail.com"
+            class="inline-flex items-center gap-2 px-2 py-1 rounded-lg border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z" />
+            </svg>
+            Say hi!
+          </a>
+        </div>
 
         <!-- Contact Grid Removed -->
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+</style>
