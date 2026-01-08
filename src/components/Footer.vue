@@ -4,7 +4,7 @@
 
       <!-- Left: Copyright -->
       <div class="text-[10px] font-medium text-slate-400">
-        &copy; {{ new Date().getFullYear() }} Melanie Abalde. All rights preserved.
+        &copy; 2024 Melanie Abalde. All rights preserved.
       </div>
 
       <!-- Right: Tech Stack -->
