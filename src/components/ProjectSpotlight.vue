@@ -123,15 +123,15 @@ const projects = [
         title: "Reservation Monitoring System",
         description: "Capstone project implementing a full-scale reservation and monitoring system for campus facilities, significantly improving administrative efficiency.",
         tech: ["Flutter", "ReactJS", "PHP"],
-        image: imgAMS,
+        image: imgGSD,
         link: null,
     },
     {
-        title: "Siargao Travel Website",
-        description: "Responsive tourism platform for Siargao Island featuring destination guides, tour booking packages, and user reviews.",
-        tech: ["VueJS", "PHP", "MySQL"],
-        image: imgGSD,
-        link: "https://github.com/Araanna/Siargao-Travel-and-Tour-Website"
+        title: "Attendance and Management System",
+        description: "Attendance and Management System for student campus events and activities.",
+        image: imgAMS,
+        tech: ["Vuejs", "FastAPI", "MySQL"],
+        link: "https://github.com/Araanna/IT-DAYS---ATTENDANCE-MONITORING-SYSTEM"
     },
     {
         title: "Unity RPG Game",
