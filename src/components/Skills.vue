@@ -9,6 +9,11 @@
           <li>JavaScript (ES6+)</li>
           <li>HTML5 & CSS3</li>
         </ul>
+        <h4 class="font-bold mb-2 text-purple-600 mt-4">Backend</h4>
+        <ul class="list-disc ml-4 space-y-1">
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+        </ul>
       </div>
       <div>
         <h4 class="font-bold mb-2 text-purple-600">Tools & Design</h4>

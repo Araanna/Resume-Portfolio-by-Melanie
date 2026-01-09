@@ -124,7 +124,7 @@ const projects = [
         description: "Capstone project implementing a full-scale reservation and monitoring system for campus facilities, significantly improving administrative efficiency.",
         tech: ["Flutter", "ReactJS", "PHP"],
         image: imgAMS,
-        link: "https://github.com/Araanna/IT-DAYS-WEB-APP"
+        link: null,
     },
     {
         title: "Siargao Travel Website",
