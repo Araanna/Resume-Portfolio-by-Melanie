@@ -71,9 +71,7 @@ onMounted(() => {
       <div class="shrink-0">
         <div class="relative h-48 w-48 overflow-hidden rounded-2xl bg-yellow-200 shadow-inner">
           <!-- Placeholder for user image, using a cute gradient for now if no image -->
-          <img
-            src="https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/481018871_122108968646768005_6361117097415219891_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEkUp_fDECPLCcWllnv8EZ23wBgmsUd-tzfAGCaxR363HQpYfSODmomODaPf9wgDsXw3FK-AtvlJSyh9CTnrb4T&_nc_ohc=GJRVimmYUMkQ7kNvwEcd1AO&_nc_oc=Adnj7xOik_qxUV0ejy9Zy1hJNh1IRfN17lLBUA52uHYyCYXxXD620O1KERvKSN4h-3U&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=6NuQcjLEuMHv0YHK8R52Vg&oh=00_AfrLwqiLk-d0FuDlTZpn9962QIfURlAeDBEUpGS5vpzzHw&oe=695FB903"
-            alt="Profile"
+          <img src="../assets/images/mela.dev.jpg" alt="Profile"
             class="h-full w-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
