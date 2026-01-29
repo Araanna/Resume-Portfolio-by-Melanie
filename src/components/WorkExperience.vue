@@ -58,7 +58,7 @@ const experiences = [
     {
         company: "Just Click IT Solutions",
         role: "Full Stack Developer",
-        date: "Aug 2024 – Nov 2025",
+        date: "Aug 2023 – Nov 2025",
         location: "Remote",
         points: [
             "Designed responsive UI/UX layouts using Figma.",
