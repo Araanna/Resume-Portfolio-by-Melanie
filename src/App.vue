@@ -277,6 +277,34 @@
             </div>
           </ScrollReveal>
 
+          <!-- Project 5: Cebu Client Project -->
+          <ScrollReveal :delay="500">
+            <div
+              class="group flex flex-col justify-between rounded-xl bg-purple-50 p-6 transition-all hover:-translate-y-1 hover:shadow-md h-full">
+              <div>
+                <div class="mb-4 flex items-center justify-between text-purple-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                  </svg>
+                </div>
+                <h3 class="mb-2 text-lg font-bold text-slate-800 group-hover:text-purple-600 transition-colors">
+                  Client-Based Project (Cebu)</h3>
+                <p class="mb-4 text-sm leading-relaxed text-slate-600">
+                  A professional client project developed during my years working in Cebu, delivering high-quality
+                  software solutions and technical expertise.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                <span>C#</span>
+                <span>ASP.NET</span>
+                <span>ReactJS</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </ScrollReveal>
+
         </div>
       </div>
 

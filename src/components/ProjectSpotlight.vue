@@ -109,6 +109,7 @@ import imgMobile from '../assets/images/Mobile.png'
 import imgGame from '../assets/images/Game.png'
 import imgAMS from '../assets/images/AMS.png'
 import imgGSD from '../assets/images/GSD.png'
+import imgCebu from '../assets/images/CebuProject.png'
 
 const currentIndex = ref(0)
 const projects = [
@@ -139,6 +140,13 @@ const projects = [
         tech: ["Unity", "C#"],
         image: imgGame,
         link: "https://github.com/Araanna/gamedev_website"
+    },
+    {
+        title: "Client-Based Project (Cebu)",
+        description: "A professional client project developed during my years working in Cebu, delivering high-quality software solutions and technical expertise.",
+        tech: ["C#", "ASP.NET", "ReactJS", "Python"],
+        image: imgCebu,
+        link: null
     }
 ]
 
